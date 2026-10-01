@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Tailwind 4 pinta los bordes con el color del texto. Se devuelve el gris claro de siempre. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-slate-200, currentColor);
+  }
+}
